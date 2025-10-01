@@ -22,7 +22,7 @@ def preprocess(df):
     df["hour"] = df["date_time"].dt.hour
     df["dayofweek"] = df["date_time"].dt.dayofweek
     df["month"] = df["date_time"].dt.month
-    # one-hot (same as training)
+    # one-hot 
     df = pd.get_dummies(df, columns=["holiday", "weather_main", "weather_description"], drop_first=True)
     return df
 
