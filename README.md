@@ -1,4 +1,4 @@
-# 🚦 Smart Traffic Predictor — Nowcasting (Streamlit + XGBoost)
+# 🚦 Smart Traffic Predictor - Nowcasting (Streamlit + XGBoost)
 
 Predicts **traffic volume (vehicles/hour)** for the **current hour** (nowcasting) using time & weather features from the *Metro Interstate Traffic Volume* dataset (Kaggle).
 
