@@ -52,5 +52,11 @@ print(f"MAE: {mae:.2f}")
 print(f"RMSE: {rmse:.2f}")
 
 Path("models").mkdir(exist_ok=True, parents=True)
-joblib.dump(model, MODEL_PATH)
+artifact = {
+    "model": model,
+    "columns": X_train.columns.tolist(),           
+    "metrics": {"mae": float(mae), "rmse": float(rmse)},
+    "task": "nowcasting"
+}
+joblib.dump(artifact, MODEL_PATH)
 print(f"Model saved to {MODEL_PATH}")
