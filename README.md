@@ -50,8 +50,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ---
-## 2) Download the dataset
-Download Metro_Interstate_Traffic_Volume.csv from the repo:
+## 2) Dataset
+The CSV is included in this repo at:
 ```
 data/raw/Metro_Interstate_Traffic_Volume.csv
 ```
@@ -61,7 +61,7 @@ data/raw/Metro_Interstate_Traffic_Volume.csv
 streamlit run src/app/app.py
 ```
 ---
-## 4) When the app opens, click Upload and select the downloaded csv file:
+## 4) When the app opens, click Upload and select the csv file:
 ```bash
 Metro_Interstate_Traffic_Volume.csv
 ```
